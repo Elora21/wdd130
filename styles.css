@@ -1,40 +1,36 @@
-/* Style for the main content */
+/* Styling for the main content */
 main {
-  max-width: 840px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Style for the aside section */
+/* Styling for the new aside element */
 aside {
-  width: 300px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  color: #333;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333; /* Ensure good contrast */
 }
 
-/* Style for the image inside the aside */
+/* Ensure the image inside the aside has proper sizing */
 aside img {
-  width: 200px;
-  height: auto;
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* Exclusive style for the profile image in the main content */
+/* Modify the existing main img to ensure it doesn't affect aside images */
 main img {
-  width: 150px;
-  height: auto;
+    width: 150px;
+    height: auto;
 }
 
-/* Set padding for paragraphs */
-p {
-  padding: 0;
-}
-
-/* Style for the footer */
+/* Footer styling */
 footer {
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-  text-align: center;
-  padding-top: 10px;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding-top: 10px;
 }
