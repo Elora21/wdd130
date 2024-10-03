@@ -1,34 +1,55 @@
-/* Set background color to pink */
+/* Body styling */
 body {
     background-color: pink;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Styling for the main content */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Styling for the aside element */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Aside section styling */
 aside {
     width: 300px;
     margin: 20px;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
-    color: #333; /* Ensure good contrast */
+    color: #333;
 }
 
-/* Ensure the image inside the aside has proper sizing */
+/* Image styling inside aside */
 aside img {
     width: 200px;
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Modify the existing main img */
+/* Main image styling */
 main img {
     width: 150px;
     height: auto;
