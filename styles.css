@@ -1,3 +1,10 @@
+/* Set background color to pink */
+body {
+    background-color: pink;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Styling for the main content */
 main {
     max-width: 800px;
@@ -5,7 +12,7 @@ main {
     padding: 20px;
 }
 
-/* Styling for the new aside element */
+/* Styling for the aside element */
 aside {
     width: 300px;
     margin: 20px;
@@ -21,7 +28,7 @@ aside img {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Modify the existing main img to ensure it doesn't affect aside images */
+/* Modify the existing main img */
 main img {
     width: 150px;
     height: auto;
