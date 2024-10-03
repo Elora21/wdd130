@@ -1,64 +1,49 @@
-/* Body styling */
+/* Set body background color and default styling */
 body {
     background-color: pink;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Header styling */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main content styling */
+/* Main element styling with max-width */
 main {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 800px;  /* Limit the width as per the instructions */
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
 }
 
-/* Aside section styling */
-aside {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Image styling inside aside */
-aside img {
-    width: 200px;
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Main image styling */
+/* Profile image within main element */
 main img {
     width: 150px;
-    height: auto;
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Aside element styling */
+aside {
+    width: 300px;  /* Set width */
+    margin: 20px auto;  /* Center with margin */
+    border: 1px solid #ccc;  /* Border around aside */
+    padding: 10px;  /* Padding inside */
+    background-color: #f9f9f9;  /* Background color */
+    color: #333;  /* Text color */
+}
+
+/* Image inside aside (for state or country) */
+aside img {
+    width: 200px;
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Paragraph styling */
+p {
+    padding: 0;  /* Ensure padding is set to 0 */
+    margin-bottom: 10px;
 }
 
 /* Footer styling */
 footer {
-    margin-top: 20px;
-    border-top: 2px solid #ccc;
-    text-align: center;
-    padding-top: 10px;
+    margin-top: 20px;  /* Separate footer from main content */
+    border-top: 2px solid #ccc;  /* Add top border to footer */
+    text-align: center;  /* Center-align text in the footer */
+    padding-top: 10px;  /* Add padding to the top */
 }
