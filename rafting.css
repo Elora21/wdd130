@@ -1,30 +1,28 @@
 /* CSS Variables for color scheme */
 :root {
-    --primary-color: #086C4B; /* For elements like headers */
-    --secondary-color: #6C9EB4; /* For secondary background or headings */
-    --text-color: #000000; /* Black for text */
-    --background-color: #FFFFFF; /* White background */
-    --accent-color: #FF6F20; /* Orange for accent */
-    --footer-background: #000000; /* Black footer background */
+    --primary-color: #086C4B;
+    --secondary-color: #6C9EB4;
+    --text-color: #000000;
+    --background-color: #FFFFFF;
+    --accent-color: #FF6F20;
 }
 
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif;
-    color: var(--text-color); /* Black text */
-    background-color: var(--background-color); /* White background */
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
 /* Header Styling */
 header {
-    background-color: var(--primary-color); /* Green header */
+    background-color: var(--primary-color);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -35,11 +33,10 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--accent-color); /* Orange hover effect */
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -47,7 +44,6 @@ nav a:hover {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
 }
 
 .hero-img {
@@ -63,20 +59,17 @@ nav a:hover {
     transform: translate(-50%, -50%);
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    padding: 1.5rem 2rem;
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1rem 2rem;
 }
 
 /* Article Styling */
 article {
-    display: flex;
-    padding: 3rem;
-    background-color: white;
-    margin: 2rem auto;
-    max-width: 1100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
 }
 
 .employee-img {
@@ -86,18 +79,10 @@ article {
     border-radius: 8px;
 }
 
-article p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--text-color); /* Black text */
-}
-
 /* Section Styling */
 section {
     padding: 3rem 2rem;
     margin: 2rem auto;
-    background-color: var(--background-color); /* White background */
     max-width: 1100px;
     text-align: center;
 }
@@ -105,7 +90,7 @@ section {
 section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: var(--secondary-color); /* Light blue for section headings */
+    color: var(--secondary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -113,12 +98,11 @@ section p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     line-height: 1.7;
-    color: var(--text-color); /* Black text */
 }
 
 /* Footer Styling */
 footer {
-    background-color: var(--footer-background); /* Black footer */
+    background-color: var(--text-color);
     color: white;
     padding: 1.5rem 2rem;
     text-align: center;
@@ -128,7 +112,6 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
 }
 
 footer a img {
@@ -138,9 +121,8 @@ footer a img {
 
 footer a {
     text-decoration: none;
-    color: var(--accent-color); /* Orange for footer links */
 }
 
 footer a:hover {
-    color: var(--primary-color); /* Green hover effect */
+    color: var(--accent-color);
 }
