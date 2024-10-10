@@ -1,0 +1,120 @@
+/* CSS Variables for color scheme */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif; /* Secondary font for general text */
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif; /* Primary font for headings */
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+/* Article Styling */
+article {
+    display: flex;
+    padding: 2rem;
+    background-color: white;
+}
+
+.employee-img {
+    float: right; /* Updated to meet the floating image requirement */
+    margin-left: 20px;
+    width: 150px;
+}
+
+article p {
+    font-family: 'Lato', sans-serif; /* Secondary font for body text */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif; /* Primary font for section headings */
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+section p {
+    font-family: 'Lato', sans-serif; /* Secondary font for section text */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
