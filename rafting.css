@@ -1,14 +1,16 @@
 /* CSS Variables for color scheme */
 :root {
     --primary-color: #086C4B;
-    --secondary-color: #086C4B; /* Consistent case for hex colors */
+    --secondary-color: #6C9EB4;
     --text-color: #000000;
     --background-color: #FFFFFF;
+    --accent-color: #FF6F20;
+    --footer-background: #000000; /* Dark footer background */
 }
 
 /* General Styles */
 body {
-    font-family: 'Lato', sans-serif; /* Secondary font for general text */
+    font-family: 'Lato', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
@@ -18,10 +20,11 @@ body {
 /* Header Styling */
 header {
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -31,7 +34,8 @@ header .logo {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -47,7 +51,8 @@ nav a:hover {
 
 .hero-img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .hero h1 {
@@ -55,59 +60,72 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Playfair Display', serif; /* Primary font for headings */
-    font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Ensure the text is readable over the image */
-    padding: 1rem;
-    color: white; /* Explicitly set color */
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
 }
 
 /* Article Styling */
 article {
     display: flex;
-    padding: 2rem;
+    padding: 3rem;
     background-color: white;
+    margin: 2rem auto;
+    max-width: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .employee-img {
-    float: right; /* Be cautious mixing float with flex */
+    float: right;
     margin-left: 20px;
     width: 150px;
+    border-radius: 8px;
 }
 
 article p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Section Styling */
 section {
-    padding: 2rem;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    max-width: 1100px;
+    text-align: center;
 }
 
 section h2 {
-    font-family: 'Playfair Display', serif; /* Primary font for section headings */
-    font-size: 2rem;
-    color: var(--secondary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--secondary-color); /* Updated to secondary color */
+    margin-bottom: 1.5rem;
 }
 
 section p {
-    font-family: 'Lato', sans-serif; /* Secondary font for section text */
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-color);
 }
 
 /* Footer Styling */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--footer-background);
     color: white;
+    padding: 1.5rem 2rem;
     text-align: center;
-    padding: 1rem;
+    margin-top: 3rem;
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -118,4 +136,9 @@ footer a img {
 
 footer a {
     text-decoration: none;
+    color: var(--accent-color); /* Accent color for footer links */
+}
+
+footer a:hover {
+    color: var(--primary-color); /* Hover color */
 }
