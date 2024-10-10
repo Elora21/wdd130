@@ -1,9 +1,9 @@
 /* CSS Variables for color scheme */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --text-color: #333;
-    --background-color: #f4f4f4;
+    --primary-color: #086C4B;
+    --secondary-color: #086c4b;
+    --text-color: #000000;
+    --background-color: #FFFFFF;
 }
 
 /* General Styles */
