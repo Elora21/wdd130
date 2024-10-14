@@ -16,23 +16,31 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
+/* Header Styling with CSS Grid */
 header {
     background-color: var(--primary-color);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
+    padding: 1rem 2rem;
 }
 
 header .logo {
     width: 150px;
 }
 
+/* Navigation Styling with Flexbox */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -66,52 +74,86 @@ nav a:hover {
 
 /* Article Styling */
 article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
     color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 1100px;
 }
 
-.employee-img {
-    float: right;
-    margin-left: 20px;
+article .employee-img {
     width: 150px;
+    margin-right: 20px;
     border-radius: 8px;
 }
 
-/* Section Styling */
-section {
+/* History Section */
+section.history {
     padding: 3rem 2rem;
     margin: 2rem auto;
     max-width: 1100px;
     text-align: center;
 }
 
-section h2 {
+section.history h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
 }
 
-section p {
+section.history p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     line-height: 1.7;
+}
+
+/* Adventure Section using CSS Grid */
+section.adventures {
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 /* Footer Styling */
 footer {
     background-color: var(--text-color);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 2rem;
-    text-align: center;
-    margin-top: 3rem;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+footer .social-icons {
+    display: flex;
 }
 
 footer a img {
