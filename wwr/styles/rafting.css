@@ -1,1 +1,175 @@
 
+
+
+
+
+/* CSS Variables for color scheme */
+:root {
+    --primary-color: #086C4B;
+    --secondary-color: #6C9EB4;
+    --text-color: #000000;
+    --background-color: #FFFFFF;
+    --accent-color: #FF6F20;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling with CSS Grid */
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    width: 150px;
+}
+
+/* Navigation Styling with Flexbox */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* Article Styling */
+article {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 1100px;
+}
+
+article .employee-img {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* History Section */
+section.history {
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+section.history h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+section.history p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Adventure Section using CSS Grid */
+section.adventures {
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--text-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .social-icons {
+    display: flex;
+}
+
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
